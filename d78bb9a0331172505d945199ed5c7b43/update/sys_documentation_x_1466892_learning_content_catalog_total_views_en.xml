@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="total_views" label="Total Views" language="en" table="x_1466892_learning_content_catalog">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>total_views</element>
+            <help/>
+            <hint/>
+            <label>Total Views</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <plural>Total Views</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_id>907eb928331172505d945199ed5c7b60</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Total Views</sys_name>
+            <sys_package display_value="Learning Eng" source="x_1466892_learning">d78bb9a0331172505d945199ed5c7b43</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Learning Eng">d78bb9a0331172505d945199ed5c7b43</sys_scope>
+            <sys_update_name>sys_documentation_x_1466892_learning_content_catalog_total_views_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

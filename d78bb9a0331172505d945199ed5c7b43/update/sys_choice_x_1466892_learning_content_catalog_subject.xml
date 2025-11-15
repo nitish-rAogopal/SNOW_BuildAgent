@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="subject" table="x_1466892_learning_content_catalog" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>subject</element>
+            <name>x_1466892_learning_content_catalog</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_id>a87eb928331172505d945199ed5c7bac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>subject</sys_name>
+            <sys_package display_value="Learning Eng" source="x_1466892_learning">d78bb9a0331172505d945199ed5c7b43</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Learning Eng">d78bb9a0331172505d945199ed5c7b43</sys_scope>
+            <sys_update_name>sys_choice_x_1466892_learning_content_catalog_subject</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mathematics</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2c7eb928331172505d945199ed5c7bab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+            <value>math</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Science</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c7eb928331172505d945199ed5c7bab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+            <value>science</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Language Arts</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac7eb928331172505d945199ed5c7bab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+            <value>language_arts</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Social Studies</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ec7eb928331172505d945199ed5c7bab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+            <value>social_studies</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Art &amp; Creativity</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>207eb928331172505d945199ed5c7bac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+            <value>art</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physical Education</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>607eb928331172505d945199ed5c7bac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+            <value>physical_education</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Life Skills</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a07eb928331172505d945199ed5c7bac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+            <value>life_skills</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subject</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Problem Solving</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e07eb928331172505d945199ed5c7bac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:02</sys_updated_on>
+            <value>problem_solving</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
