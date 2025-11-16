@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1466892_learning_intervention" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>58de7d68331172505d945199ed5c7ba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>completed_date</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>58de7d68331172505d945199ed5c7ba9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>created_date</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>dcde7d68331172505d945199ed5c7ba9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>54de7d68331172505d945199ed5c7baa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>due_date</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>d8de7d68331172505d945199ed5c7baa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>follow_up_date</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>50de7d68331172505d945199ed5c7bab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>follow_up_required</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>d4de7d68331172505d945199ed5c7bab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>intervention_type</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>5cde7d68331172505d945199ed5c7bab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>notification_date</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>d0de7d68331172505d945199ed5c7bac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>outcome_notes</element>
+            <list_id display_value="x_1466892_learning_intervention" element="NULL" name="x_1466892_learning_intervention" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">98de7d68331172505d945199ed5c7ba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_id>58de7d68331172505d945199ed5c7bac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1466892_learning_intervention</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:50:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>98de7d68331172505d945199ed5c7ba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1466892_learning_intervention</sys_name>
+            <sys_package display_value="Learning Eng" source="x_1466892_learning">d78bb9a0331172505d945199ed5c7b43</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Learning Eng">d78bb9a0331172505d945199ed5c7b43</sys_scope>
+            <sys_update_name>sys_ui_list_x_1466892_learning_intervention_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:50:40</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "serialNumber": "urn:uuid:71cb38ed-ae37-411d-bb19-644e18c2a328",
+  "metadata": {
+    "timestamp": "2025-11-15T19:30:57.735Z",
+    "tools": {
+      "components": [
+        {
+          "type": "library",
+          "name": "sdk-build-plugins",
+          "group": "@servicenow",
+          "version": "4.0.2",
+          "author": "ServiceNow"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "x-1466892-learning-eng",
+      "version": "1.0.0",
+      "bom-ref": "pkg:servicenow/x-1466892-learning-eng@1.0.0?sys_scope_id=d78bb9a0331172505d945199ed5c7b43",
+      "description": "[BUILD AGENT GENERATED]:  A comprehensive ServiceNow application that captures learning interactions, measures engagement, generates actionable insights for teachers and administrators, and ties content effectiveness back to learning outcomes. Features include student risk assessment, content analytics, intervention workflows, and marketing funnel analysis.",
+      "licenses": [
+        {
+          "license": {
+            "name": "UNLICENSED"
+          }
+        }
+      ],
+      "purl": "pkg:servicenow/x-1466892-learning-eng@1.0.0?sys_scope_id=d78bb9a0331172505d945199ed5c7b43"
+    }
+  },
+  "components": [],
+  "dependencies": [
+    {
+      "ref": "pkg:servicenow/x-1466892-learning-eng@1.0.0?sys_scope_id=d78bb9a0331172505d945199ed5c7b43"
+    }
+  ]
+}]]></content>
+        <external_source>false</external_source>
+        <path>x_1466892_learning/x-1466892-learning-eng/1.0.0/bom.json</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-15 18:49:04</sys_created_on>
+        <sys_id>9d99a6bdcf45433c9fcf26a93898ce7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1466892_learning/x-1466892-learning-eng/1.0.0/bom.json</sys_name>
+        <sys_package display_value="Learning Eng" source="x_1466892_learning">d78bb9a0331172505d945199ed5c7b43</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Eng">d78bb9a0331172505d945199ed5c7b43</sys_scope>
+        <sys_update_name>sys_module_9d99a6bdcf45433c9fcf26a93898ce7e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-15 18:49:04</sys_updated_on>
+    </sys_module>
+</record_update>

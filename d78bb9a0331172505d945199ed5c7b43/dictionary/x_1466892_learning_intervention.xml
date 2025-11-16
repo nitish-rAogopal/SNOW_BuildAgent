@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f76e3928331172505d945199ed5c7bdf" label="Student Intervention" max_length="40" name="x_1466892_learning_intervention" type="collection">
+        <element attributes="encode_utf8=false" label="Student" mandatory="true" max_length="32" name="student" reference="x_1466892_learning_student_profile" type="reference"/>
+        <element attributes="encode_utf8=false" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Completed Date" max_length="40" name="completed_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element label="Parent Notified" max_length="40" name="parent_notified" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Parent Notification Date" max_length="40" name="notification_date" type="glide_date_time"/>
+        <element choice="1" label="Intervention Type" mandatory="true" max_length="40" name="intervention_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Behavioral Guidance" sequence="1" value="behavioral_guidance"/>
+                <element inactive_on_update="false" label="Additional Assessment" sequence="5" value="assessment"/>
+                <element inactive_on_update="false" label="Emotional Counseling" sequence="2" value="emotional_counseling"/>
+                <element inactive_on_update="false" label="Resource Referral" sequence="6" value="resource_referral"/>
+                <element inactive_on_update="false" label="Parent Conference" sequence="3" value="parent_conference"/>
+                <element inactive_on_update="false" label="Academic Support" sequence="0" value="academic_support"/>
+                <element inactive_on_update="false" label="Tutoring Session" sequence="4" value="tutoring"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Outcome Notes" max_length="2000" name="outcome_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Description" mandatory="true" max_length="1000" name="description" type="string"/>
+        <element label="Follow-up Required" max_length="40" name="follow_up_required" type="boolean"/>
+        <element choice="1" default="medium" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Urgent" sequence="3" value="urgent"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+            </choice>
+        </element>
+        <element choice="1" default="requested" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in_progress"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:gs.nowDateTime()" label="Created" max_length="40" name="created_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Follow-up Date" max_length="40" name="follow_up_date" type="glide_date"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="requested_by"/>
+        </index>
+        <index name="index3">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

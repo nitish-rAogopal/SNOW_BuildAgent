@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[import { gs, GlideRecord, GlideAggregate, GlideDateTime } from '@servicenow/glide';
+
+export function calculateRiskScores(current, previous) {
+    try {
+        const studentId = current.getValue('student');
+        if (!studentId) {
+            gs.warn('No student ID found for engagement event: ' + current.sys_id);
+            return;
+        }
+
+        // Get the student record
+        const studentGr = new GlideRecord('x_1466892_learning_student_profile');
+        if (!studentGr.get(studentId)) {
+            gs.warn('Student not found: ' + studentId);
+            return;
+        }
+
+        // Calculate academic risk based on quiz performance and completion rates
+        const academicRisk = calculateAcademicRisk(studentId);
+        
+        // Calculate behavioral risk based on engagement patterns
+        const behavioralRisk = calculateBehavioralRisk(studentId);
+        
+        // Calculate emotional risk based on participation and interaction quality
+        const emotionalRisk = calculateEmotionalRisk(studentId);
+        
+        // Update student record with new risk scores
+        studentGr.setValue('academic_risk_score', academicRisk);
+        studentGr.setValue('behavioral_risk_score', behavioralRisk);
+        studentGr.setValue('emotional_risk_score', emotionalRisk);
+        
+        // Calculate overall risk level
+        const overallRisk = Math.max(academicRisk, behavioralRisk, emotionalRisk);
+        let riskLevel = 'low';
+        if (overallRisk >= 75) {
+            riskLevel = 'critical';
+        } else if (overallRisk >= 50) {
+            riskLevel = 'high';
+        } else if (overallRisk >= 25) {
+            riskLevel = 'medium';
+        }
+        
+        studentGr.setValue('overall_risk_level', riskLevel);
+        studentGr.update();
+        
+        gs.info('Updated risk scores for student: ' + studentId + 
+               ' (Academic: ' + academicRisk + 
+               ', Behavioral: ' + behavioralRisk + 
+               ', Emotional: ' + emotionalRisk + 
+               ', Overall: ' + riskLevel + ')');
+        
+        // Trigger intervention if high risk
+        if (riskLevel === 'high' || riskLevel === 'critical') {
+            triggerInterventionWorkflow(studentId, riskLevel);
+        }
+        
+    } catch (error) {
+        gs.error('Error calculating risk scores: ' + error.message);
+    }
+}
+
+function calculateAcademicRisk(studentId) {
+    let riskScore = 0;
+    
+    // Check recent quiz performance (last 30 days)
+    const thirtyDaysAgo = new GlideDateTime();
+    thirtyDaysAgo.addDaysUTC(-30);
+    
+    const quizAggregate = new GlideAggregate('x_1466892_learning_engagement_event');
+    quizAggregate.addQuery('student', studentId);
+    quizAggregate.addQuery('event_type', 'quiz_complete');
+    quizAggregate.addQuery('timestamp', '>=', thirtyDaysAgo);
+    quizAggregate.addAggregate('AVG', 'quiz_score');
+    quizAggregate.addAggregate('COUNT');
+    quizAggregate.query();
+    
+    if (quizAggregate.next()) {
+        const avgScore = parseFloat(quizAggregate.getAggregate('AVG', 'quiz_score')) || 0;
+        const quizCount = parseInt(quizAggregate.getAggregate('COUNT')) || 0;
+        
+        // Lower scores = higher risk
+        if (avgScore < 60) {
+            riskScore += 30;
+        } else if (avgScore < 70) {
+            riskScore += 20;
+        } else if (avgScore < 80) {
+            riskScore += 10;
+        }
+        
+        // Few quiz attempts = higher risk
+        if (quizCount < 3) {
+            riskScore += 20;
+        } else if (quizCount < 6) {
+            riskScore += 10;
+        }
+    } else {
+        // No quiz data = moderate risk
+        riskScore += 25;
+    }
+    
+    // Check completion rates
+    const completionAggregate = new GlideAggregate('x_1466892_learning_engagement_event');
+    completionAggregate.addQuery('student', studentId);
+    completionAggregate.addQuery('event_type', 'view_complete');
+    completionAggregate.addQuery('timestamp', '>=', thirtyDaysAgo);
+    completionAggregate.addAggregate('AVG', 'completion_percentage');
+    completionAggregate.query();
+    
+    if (completionAggregate.next()) {
+        const avgCompletion = parseFloat(completionAggregate.getAggregate('AVG', 'completion_percentage')) || 0;
+        
+        if (avgCompletion < 50) {
+            riskScore += 25;
+        } else if (avgCompletion < 75) {
+            riskScore += 15;
+        } else if (avgCompletion < 90) {
+            riskScore += 5;
+        }
+    }
+    
+    return Math.min(riskScore, 100);
+}
+
+function calculateBehavioralRisk(studentId) {
+    let riskScore = 0;
+    
+    const sevenDaysAgo = new GlideDateTime();
+    sevenDaysAgo.addDaysUTC(-7);
+    
+    // Check for frequent abandonment
+    const abandonAggregate = new GlideAggregate('x_1466892_learning_engagement_event');
+    abandonAggregate.addQuery('student', studentId);
+    abandonAggregate.addQuery('event_type', 'abandon');
+    abandonAggregate.addQuery('timestamp', '>=', sevenDaysAgo);
+    abandonAggregate.addAggregate('COUNT');
+    abandonAggregate.query();
+    
+    if (abandonAggregate.next()) {
+        const abandonCount = parseInt(abandonAggregate.getAggregate('COUNT')) || 0;
+        
+        if (abandonCount > 10) {
+            riskScore += 30;
+        } else if (abandonCount > 5) {
+            riskScore += 20;
+        } else if (abandonCount > 2) {
+            riskScore += 10;
+        }
+    }
+    
+    // Check session duration patterns
+    const durationAggregate = new GlideAggregate('x_1466892_learning_engagement_event');
+    durationAggregate.addQuery('student', studentId);
+    durationAggregate.addQuery('event_type', 'view_complete');
+    durationAggregate.addQuery('timestamp', '>=', sevenDaysAgo);
+    durationAggregate.addAggregate('AVG', 'duration_seconds');
+    durationAggregate.query();
+    
+    if (durationAggregate.next()) {
+        const avgDuration = parseFloat(durationAggregate.getAggregate('AVG', 'duration_seconds')) || 0;
+        
+        // Very short sessions may indicate attention issues
+        if (avgDuration < 120) { // Less than 2 minutes
+            riskScore += 25;
+        } else if (avgDuration < 300) { // Less than 5 minutes
+            riskScore += 15;
+        }
+    }
+    
+    return Math.min(riskScore, 100);
+}
+
+function calculateEmotionalRisk(studentId) {
+    let riskScore = 0;
+    
+    const fourteenDaysAgo = new GlideDateTime();
+    fourteenDaysAgo.addDaysUTC(-14);
+    
+    // Check engagement score trends
+    const engagementAggregate = new GlideAggregate('x_1466892_learning_engagement_event');
+    engagementAggregate.addQuery('student', studentId);
+    engagementAggregate.addQuery('timestamp', '>=', fourteenDaysAgo);
+    engagementAggregate.addNotNullQuery('engagement_score');
+    engagementAggregate.addAggregate('AVG', 'engagement_score');
+    engagementAggregate.query();
+    
+    if (engagementAggregate.next()) {
+        const avgEngagement = parseFloat(engagementAggregate.getAggregate('AVG', 'engagement_score')) || 0;
+        
+        if (avgEngagement < 30) {
+            riskScore += 35;
+        } else if (avgEngagement < 50) {
+            riskScore += 25;
+        } else if (avgEngagement < 70) {
+            riskScore += 10;
+        }
+    } else {
+        // No engagement data = risk
+        riskScore += 20;
+    }
+    
+    // Check for consistent participation
+    const activityAggregate = new GlideAggregate('x_1466892_learning_engagement_event');
+    activityAggregate.addQuery('student', studentId);
+    activityAggregate.addQuery('timestamp', '>=', fourteenDaysAgo);
+    activityAggregate.addAggregate('COUNT');
+    activityAggregate.query();
+    
+    if (activityAggregate.next()) {
+        const activityCount = parseInt(activityAggregate.getAggregate('COUNT')) || 0;
+        
+        // Low activity = emotional disengagement risk
+        if (activityCount < 10) {
+            riskScore += 25;
+        } else if (activityCount < 20) {
+            riskScore += 15;
+        }
+    }
+    
+    return Math.min(riskScore, 100);
+}
+
+function triggerInterventionWorkflow(studentId, riskLevel) {
+    try {
+        // Create an intervention request
+        const interventionGr = new GlideRecord('x_1466892_learning_intervention');
+        interventionGr.initialize();
+        interventionGr.setValue('student', studentId);
+        interventionGr.setValue('intervention_type', 'assessment');
+        interventionGr.setValue('priority', riskLevel === 'critical' ? 'urgent' : 'high');
+        interventionGr.setValue('status', 'requested');
+        interventionGr.setValue('description', 'Automated intervention triggered due to ' + riskLevel + ' risk level');
+        
+        const sevenDaysFromNow = new GlideDateTime();
+        sevenDaysFromNow.addDaysUTC(7);
+        interventionGr.setValue('due_date', sevenDaysFromNow.getDate());
+        
+        const interventionId = interventionGr.insert();
+        
+        gs.info('Created intervention request: ' + interventionId + ' for student: ' + studentId);
+        
+    } catch (error) {
+        gs.error('Error creating intervention: ' + error.message);
+    }
+}]]></content>
+        <external_source>false</external_source>
+        <path>x_1466892_learning/x-1466892-learning-eng/1.0.0/src/server/risk-calculator.js</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-15 18:49:03</sys_created_on>
+        <sys_id>7a637aac3bec4d4ba8099b8c6d16b79e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1466892_learning/x-1466892-learning-eng/1.0.0/src/server/risk-calculator.js</sys_name>
+        <sys_package display_value="Learning Eng" source="x_1466892_learning">d78bb9a0331172505d945199ed5c7b43</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Eng">d78bb9a0331172505d945199ed5c7b43</sys_scope>
+        <sys_update_name>sys_module_7a637aac3bec4d4ba8099b8c6d16b79e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-15 18:49:03</sys_updated_on>
+    </sys_module>
+</record_update>

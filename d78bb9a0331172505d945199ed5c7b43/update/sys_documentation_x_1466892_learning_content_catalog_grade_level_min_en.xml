@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="grade_level_min" label="Minimum Grade Level" language="en" table="x_1466892_learning_content_catalog">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>grade_level_min</element>
+            <help/>
+            <hint/>
+            <label>Minimum Grade Level</label>
+            <language>en</language>
+            <name>x_1466892_learning_content_catalog</name>
+            <plural>Minimum Grade Levels</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:01</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Minimum Grade Level</sys_name>
+            <sys_package display_value="Learning Eng" source="x_1466892_learning">d78bb9a0331172505d945199ed5c7b43</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Learning Eng">d78bb9a0331172505d945199ed5c7b43</sys_scope>
+            <sys_update_name>sys_documentation_x_1466892_learning_content_catalog_grade_level_min_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
