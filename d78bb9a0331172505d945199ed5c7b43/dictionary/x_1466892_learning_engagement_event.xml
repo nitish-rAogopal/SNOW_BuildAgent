@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="536ef528331172505d945199ed5c7b7f" label="Engagement Event" max_length="40" name="x_1466892_learning_engagement_event" type="collection">
+        <element label="Duration (Seconds)" max_length="40" name="duration_seconds" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Access Location" max_length="100" name="location" type="string"/>
+        <element default="1" label="Number of Attempts" max_length="40" name="attempts_count" type="integer"/>
+        <element choice="1" default="pending" label="Processing Status" max_length="40" name="processed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending Processing" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Processed" sequence="1" value="processed"/>
+                <element inactive_on_update="false" label="Processing Error" sequence="2" value="error"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Session ID" mandatory="true" max_length="100" name="session_id" type="string"/>
+        <element attributes="encode_utf8=false" label="Content" mandatory="true" max_length="32" name="content" reference="x_1466892_learning_content_catalog" type="reference"/>
+        <element label="Engagement Score" max_length="20" name="engagement_score" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="IP Address" max_length="45" name="ip_address" type="string"/>
+        <element attributes="encode_utf8=false" label="Student" mandatory="true" max_length="32" name="student" reference="x_1466892_learning_student_profile" type="reference"/>
+        <element choice="1" label="Event Type" mandatory="true" max_length="40" name="event_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="View Completed" sequence="1" value="view_complete"/>
+                <element inactive_on_update="false" label="Game Started" sequence="5" value="game_start"/>
+                <element inactive_on_update="false" label="Content Abandoned" sequence="9" value="abandon"/>
+                <element inactive_on_update="false" label="User Interaction" sequence="2" value="interaction"/>
+                <element inactive_on_update="false" label="Game Completed" sequence="6" value="game_complete"/>
+                <element inactive_on_update="false" label="Quiz Attempt" sequence="3" value="quiz_attempt"/>
+                <element inactive_on_update="false" label="Content Paused" sequence="7" value="pause"/>
+                <element inactive_on_update="false" label="View Started" sequence="0" value="view_start"/>
+                <element inactive_on_update="false" label="Quiz Completed" sequence="4" value="quiz_complete"/>
+                <element inactive_on_update="false" label="Content Resumed" sequence="8" value="resume"/>
+            </choice>
+        </element>
+        <element label="Completion %" max_length="20" name="completion_percentage" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="User Agent" max_length="500" name="user_agent" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Event Timestamp" mandatory="true" max_length="40" name="timestamp" type="glide_date_time"/>
+        <element label="Quiz Score" max_length="20" name="quiz_score" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Additional Event Data" max_length="2000" name="additional_data" type="string"/>
+        <element choice="1" label="Device Type" max_length="40" name="device_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Chromebook" sequence="3" value="chromebook"/>
+                <element inactive_on_update="false" label="Desktop" sequence="0" value="desktop"/>
+                <element inactive_on_update="false" label="Tablet" sequence="1" value="tablet"/>
+                <element inactive_on_update="false" label="Mobile" sequence="2" value="mobile"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="content"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

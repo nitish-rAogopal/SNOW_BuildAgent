@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="product_interest" table="x_1466892_learning_marketing_analytics" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="funnel_stage" table="x_1466892_learning_marketing_analytics" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>product_interest</element>
+            <element>funnel_stage</element>
             <name>x_1466892_learning_marketing_analytics</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
-            <sys_id>547e7928331172505d945199ed5c7be8</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>product_interest</sys_name>
+            <sys_name>funnel_stage</sys_name>
             <sys_package display_value="Learning Eng" source="x_1466892_learning">d78bb9a0331172505d945199ed5c7b43</sys_package>
             <sys_policy/>
             <sys_scope display_value="Learning Eng">d78bb9a0331172505d945199ed5c7b43</sys_scope>
-            <sys_update_name>sys_choice_x_1466892_learning_marketing_analytics_product_interest</sys_update_name>
+            <sys_update_name>sys_choice_x_1466892_learning_marketing_analytics_funnel_stage</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>product_interest</element>
+            <element>funnel_stage</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Educational Board Games</label>
+            <label>Awareness</label>
             <language>en</language>
             <name>x_1466892_learning_marketing_analytics</name>
             <sequence>0</sequence>
@@ -30,18 +29,17 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d07e7928331172505d945199ed5c7bdb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
-            <value>board_games</value>
+            <value>awareness</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>product_interest</element>
+            <element>funnel_stage</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Online Courses</label>
+            <label>Interest</label>
             <language>en</language>
             <name>x_1466892_learning_marketing_analytics</name>
             <sequence>1</sequence>
@@ -50,18 +48,17 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>147e7928331172505d945199ed5c7bdb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
-            <value>online_courses</value>
+            <value>interest</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>product_interest</element>
+            <element>funnel_stage</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Tutoring Services</label>
+            <label>Consideration</label>
             <language>en</language>
             <name>x_1466892_learning_marketing_analytics</name>
             <sequence>2</sequence>
@@ -70,18 +67,17 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>1c7e7928331172505d945199ed5c7be7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
-            <value>tutoring_services</value>
+            <value>consideration</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>product_interest</element>
+            <element>funnel_stage</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Educational Apps</label>
+            <label>Purchase Intent</label>
             <language>en</language>
             <name>x_1466892_learning_marketing_analytics</name>
             <sequence>3</sequence>
@@ -90,18 +86,17 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>5c7e7928331172505d945199ed5c7be7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
-            <value>educational_apps</value>
+            <value>purchase_intent</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>product_interest</element>
+            <element>funnel_stage</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Learning Kits</label>
+            <label>Purchase</label>
             <language>en</language>
             <name>x_1466892_learning_marketing_analytics</name>
             <sequence>4</sequence>
@@ -110,11 +105,29 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9c7e7928331172505d945199ed5c7be7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
-            <value>learning_kits</value>
+            <value>purchase</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>funnel_stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Advocacy</label>
+            <language>en</language>
+            <name>x_1466892_learning_marketing_analytics</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
+            <value>advocacy</value>
         </sys_choice>
     </sys_choice>
 </record_update>

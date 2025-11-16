@@ -6,7 +6,6 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
-            <sys_id>587e7928331172505d945199ed5c7bd6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>event_type</sys_name>
             <sys_package display_value="Learning Eng" source="x_1466892_learning">d78bb9a0331172505d945199ed5c7b43</sys_package>
@@ -30,7 +29,6 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d87e7928331172505d945199ed5c7bd5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
@@ -50,7 +48,6 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>1c7e7928331172505d945199ed5c7bd5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
@@ -70,7 +67,6 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>5c7e7928331172505d945199ed5c7bd5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
@@ -90,7 +86,6 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9c7e7928331172505d945199ed5c7bd5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
@@ -110,7 +105,6 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>dc7e7928331172505d945199ed5c7bd5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
@@ -130,7 +124,6 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>107e7928331172505d945199ed5c7bd6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
@@ -150,7 +143,6 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>507e7928331172505d945199ed5c7bd6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
@@ -170,7 +162,6 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>907e7928331172505d945199ed5c7bd6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>

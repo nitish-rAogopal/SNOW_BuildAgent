@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="contact_preference" table="x_1466892_learning_marketing_analytics" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="product_interest" table="x_1466892_learning_marketing_analytics" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>contact_preference</element>
+            <element>product_interest</element>
             <name>x_1466892_learning_marketing_analytics</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
-            <sys_id>9c7e7928331172505d945199ed5c7beb</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>contact_preference</sys_name>
+            <sys_name>product_interest</sys_name>
             <sys_package display_value="Learning Eng" source="x_1466892_learning">d78bb9a0331172505d945199ed5c7b43</sys_package>
             <sys_policy/>
             <sys_scope display_value="Learning Eng">d78bb9a0331172505d945199ed5c7b43</sys_scope>
-            <sys_update_name>sys_choice_x_1466892_learning_marketing_analytics_contact_preference</sys_update_name>
+            <sys_update_name>sys_choice_x_1466892_learning_marketing_analytics_product_interest</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>contact_preference</element>
+            <element>product_interest</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Email</label>
+            <label>Educational Board Games</label>
             <language>en</language>
             <name>x_1466892_learning_marketing_analytics</name>
             <sequence>0</sequence>
@@ -30,18 +29,17 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>147e7928331172505d945199ed5c7beb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
-            <value>email</value>
+            <value>board_games</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>contact_preference</element>
+            <element>product_interest</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Phone</label>
+            <label>Online Courses</label>
             <language>en</language>
             <name>x_1466892_learning_marketing_analytics</name>
             <sequence>1</sequence>
@@ -50,18 +48,17 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>547e7928331172505d945199ed5c7beb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
-            <value>phone</value>
+            <value>online_courses</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>contact_preference</element>
+            <element>product_interest</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Physical Mail</label>
+            <label>Tutoring Services</label>
             <language>en</language>
             <name>x_1466892_learning_marketing_analytics</name>
             <sequence>2</sequence>
@@ -70,18 +67,17 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>947e7928331172505d945199ed5c7beb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
-            <value>mail</value>
+            <value>tutoring_services</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>contact_preference</element>
+            <element>product_interest</element>
             <hint/>
             <inactive>false</inactive>
-            <label>No Contact</label>
+            <label>Educational Apps</label>
             <language>en</language>
             <name>x_1466892_learning_marketing_analytics</name>
             <sequence>3</sequence>
@@ -90,11 +86,29 @@
             <sys_created_on>2025-11-15 18:49:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d47e7928331172505d945199ed5c7beb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
-            <value>no_contact</value>
+            <value>educational_apps</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Learning Kits</label>
+            <language>en</language>
+            <name>x_1466892_learning_marketing_analytics</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-15 18:49:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-15 18:49:01</sys_updated_on>
+            <value>learning_kits</value>
         </sys_choice>
     </sys_choice>
 </record_update>

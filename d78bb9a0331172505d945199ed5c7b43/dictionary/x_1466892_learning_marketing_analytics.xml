@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4c7e7928331172505d945199ed5c7b40" label="Marketing Analytics" max_length="40" name="x_1466892_learning_marketing_analytics" type="collection">
+        <element choice="1" label="Marketing Event" max_length="40" name="event_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Purchase Intent Signal" sequence="5" value="purchase_intent"/>
+                <element inactive_on_update="false" label="Game Completion" sequence="1" value="game_completion"/>
+                <element inactive_on_update="false" label="Referral Sent" sequence="6" value="referral_sent"/>
+                <element inactive_on_update="false" label="High Engagement Score" sequence="2" value="high_engagement"/>
+                <element inactive_on_update="false" label="Newsletter Signup" sequence="7" value="newsletter_signup"/>
+                <element inactive_on_update="false" label="Product Inquiry" sequence="3" value="product_inquiry"/>
+                <element inactive_on_update="false" label="Content View" sequence="0" value="content_view"/>
+                <element inactive_on_update="false" label="Demo Request" sequence="4" value="demo_request"/>
+            </choice>
+        </element>
+        <element choice="1" label="Contact Preference" max_length="40" name="contact_preference" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Email" sequence="0" value="email"/>
+                <element inactive_on_update="false" label="Phone" sequence="1" value="phone"/>
+                <element inactive_on_update="false" label="Physical Mail" sequence="2" value="mail"/>
+                <element inactive_on_update="false" label="No Contact" sequence="3" value="no_contact"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="UTM Parameters" max_length="500" name="utm_parameters" type="string"/>
+        <element attributes="encode_utf8=false" label="Student" mandatory="true" max_length="32" name="student" reference="x_1466892_learning_student_profile" type="reference"/>
+        <element attributes="encode_utf8=false" label="Content Engaged With" max_length="32" name="content" reference="x_1466892_learning_content_catalog" type="reference"/>
+        <element label="Engagement Score" max_length="20" name="engagement_score" type="decimal"/>
+        <element label="Opted in for Marketing" max_length="40" name="opt_in_marketing" type="boolean"/>
+        <element label="Revenue Attributed ($)" max_length="20" name="revenue_attributed" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="1000" name="notes" type="string"/>
+        <element choice="1" display="true" label="Funnel Stage" mandatory="true" max_length="40" name="funnel_stage" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Interest" sequence="1" value="interest"/>
+                <element inactive_on_update="false" label="Advocacy" sequence="5" value="advocacy"/>
+                <element inactive_on_update="false" label="Consideration" sequence="2" value="consideration"/>
+                <element inactive_on_update="false" label="Purchase Intent" sequence="3" value="purchase_intent"/>
+                <element inactive_on_update="false" label="Awareness" sequence="0" value="awareness"/>
+                <element inactive_on_update="false" label="Purchase" sequence="4" value="purchase"/>
+            </choice>
+        </element>
+        <element label="Conversion Probability %" max_length="20" name="conversion_probability" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Campaign Source" max_length="100" name="campaign_source" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Event Timestamp" mandatory="true" max_length="40" name="event_timestamp" type="glide_date_time"/>
+        <element choice="1" label="Product Interest" max_length="40" name="product_interest" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Online Courses" sequence="1" value="online_courses"/>
+                <element inactive_on_update="false" label="Tutoring Services" sequence="2" value="tutoring_services"/>
+                <element inactive_on_update="false" label="Educational Apps" sequence="3" value="educational_apps"/>
+                <element inactive_on_update="false" label="Learning Kits" sequence="4" value="learning_kits"/>
+                <element inactive_on_update="false" label="Educational Board Games" sequence="0" value="board_games"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="content"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>
